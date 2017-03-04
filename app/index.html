@@ -3,19 +3,50 @@
     <meta charset="UTF-8">
     <title>Item displayer</title>
 </head>
-<link rel="stylesheet" href="css/file.css">
+<link rel="stylesheet" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
 
-<div class="products">
-    <div class="products__move--left"> < </div>
-    <div class="products__move--right"> > </div>
-    <div class="products__wrapper">
-        <div class="products__item">1</div>
-        <div class="products__item">2</div>
-        <div class="products__item">3</div>
-        <div class="products__item">4</div>
-        <div class="products__item">5</div>
-    </div>
+<div class="container">
+ 
+  <div class="content">
+    <header class="header">
+      <div class="header__button"></div>
+    </header> 
+    <body>
+      
+      <div class="top-competitor">
+        <h2>Top competitor</h2>
+        <div class="top-competitor__players">
+          <p class="top-competitor__name">Your name</p>
+          <div class="top-competitor__vs">
+            <p>VS</p>
+          </div>
+          <p class="top-competitor__name">John Hancock</p>
+        </div>
+        
+      </div>
+      
+      <div class="list__container">
+        <h2>Yours top games</h2>
+        
+        <div class="list__items">
+        </div>
+        <div class="list__items">
+        </div>
+        <span class="list__show-more">Show more</span>
+      </div>
+    </body>
+  </div>
+  <div class="menu">
+  <img src="http://cdn.playbuzz.com/cdn/e22985e7-b45c-4e61-89c7-2a5458d22131/840b4a44-bf09-48fd-8066-c021eae58b30_560_420.jpg" class="user"/>
+    <ul class="menu__list">
+      <li class="menu__list__item">Menu item 1</li>
+      <li class="menu__list__item--active">Menu item 2</li>
+      <li class="menu__list__item">Menu item 3</li>
+    </ul>
+  </div>
 </div>
 
 <script src="js/script.js"></script>

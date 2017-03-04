@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  color: $color-white;
+}
+
 p,a,span,li {
   font-family: 'Open Sans', sans-serif;
-  color: white;
   font-size: .9em;
 }
 h1,h2,h3,h4,h5,h6 {

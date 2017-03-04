@@ -21,7 +21,7 @@
       color: white;
       text-align: center;
       line-height: 40px;
-      box-shadow: -2px 2px 2px black;
+      @include box-shadow ();
       cursor: pointer;
     
       &--active {

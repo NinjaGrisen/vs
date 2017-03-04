@@ -6,26 +6,23 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: $space-quarter 0;
     justify-content: center;
     align-items: center;
   }
   
   &__name {
-    color: white;
-    font-weight: bold;
     padding: $space-quarter;
+    color: $color-white;
+    font-weight: bold;
+    border-bottom: 2px solid $color-white;
+    border-top: 2px solid $color-white;
   }
   
   &__vs {
-//     background: $color-cta;
-//     width: 30px;
-//     height: 30px;
-//     font-size: 2em;
-//     text-align: center;
-    
-//     p {
-//       color: $color-main;
-//       line-height: 25px;
-//     }
+    color: $color-complimentery;
+    font-weight: bold;
+    font-size: 1.8em;
+    @include text-shadow($color: rgba(0,0,0,.4));
   }
 }
