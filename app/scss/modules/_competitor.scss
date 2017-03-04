@@ -1,0 +1,31 @@
+.top-competitor {
+  padding: $space-quarter;
+  margin: $space-quarter 0;
+  
+  &__players {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__name {
+    color: white;
+    font-weight: bold;
+    padding: $space-quarter;
+  }
+  
+  &__vs {
+//     background: $color-cta;
+//     width: 30px;
+//     height: 30px;
+//     font-size: 2em;
+//     text-align: center;
+    
+//     p {
+//       color: $color-main;
+//       line-height: 25px;
+//     }
+  }
+}

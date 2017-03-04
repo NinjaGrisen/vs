@@ -1,0 +1,38 @@
+.list {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  &__items {
+    width: 100%;
+    height: $space-double;
+    background: gold;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-right: 1px solid rgba(255, 255, 255, .6);
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
+    margin: $space-quarter 0;
+  }
+  
+  &__show-more {
+    display: inline-block;  
+    border-bottom: 2px solid $color-complimentery;
+    box-shadow: inset 0 0 0 transparent;
+    padding: 2px 3px 1px 3px;
+    margin-top: $space-quarter;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    color: $color-cta;
+    font-size: .8em;
+    cursor: pointer;
+    position: relative;
+    
+    &:hover {
+      cursor: pinter;
+      color: $color-main;
+      font-weight: bold;
+      box-shadow: inset 0 -1.6em 0 $color-complimentery;
+    }
+  }
+}
