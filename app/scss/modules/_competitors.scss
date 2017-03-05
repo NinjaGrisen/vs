@@ -1,10 +1,11 @@
-.top-competitor {
+.competitors {
   padding: $space-quarter;
   margin: $space-quarter 0;
   
   &__players {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin: $space-quarter 0;
     justify-content: center;
@@ -15,8 +16,8 @@
     padding: $space-quarter;
     color: $color-white;
     font-weight: bold;
-    border-bottom: 2px solid $color-white;
-    border-top: 2px solid $color-white;
+    border-bottom: 2px solid lighten($color-main, 30);
+    border-top: 2px solid lighten($color-main, 30);
   }
   
   &__vs {
@@ -24,5 +25,12 @@
     font-weight: bold;
     font-size: 1.8em;
     @include text-shadow($color: rgba(0,0,0,.4));
+  }
+
+  &__comparison {
+    margin: $space-quarter 0;
+    width: calc(50% - 15px);
+    height: 30px;
+    background: rgba(255, 255, 255, .3);
   }
 }
