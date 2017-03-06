@@ -11,8 +11,8 @@
     padding: $space-quarter;
     color: $color-white;
     font-weight: bold;
-    border-bottom: 2px solid $color-white;
-    border-top: 2px solid $color-white;
+    border-bottom: 2px solid lighten($color-complimentery, 25);
+    border-top: 2px solid lighten($color-complimentery, 25);
   }
   
   &__vs {
