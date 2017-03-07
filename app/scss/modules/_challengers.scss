@@ -1,0 +1,31 @@
+.challengers{
+    &-container {
+        width: calc(100% - 0px);
+        left: 0;
+        position: fixed;
+        top: calc(100vh - 54px);
+    }
+
+    &__vs-draggable {
+        position: relative;
+        height: 47px;
+        width: 61px;
+        margin-left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        font-size: 3em;
+        color: $color-main;
+        background: $color-cta;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid $color-cta;
+            top: -30px;
+        }
+    }
+}
