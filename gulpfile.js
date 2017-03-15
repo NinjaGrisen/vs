@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
@@ -98,3 +98,21 @@ gulp.task('build', function(callback) {
     callback
   )
 })
+
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
+});
+
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+    return gulp.src("app/scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("app/css"))
+        .pipe(browserSync.stream());
+});
