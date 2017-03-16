@@ -23,9 +23,10 @@
            .challengers__favorite--container {
                .challengers__favorite {
                    transform: none;
-                   box-shadow: inset -2px 2px 2px rgba(0,0,0,.3);
-                   transition: transform 1s, box-shadow .6s ease-in-out .3s;
-
+                   transition: transform 1s;
+                   animation: topChallengers 2s;
+                   transform-origin: center 25%;
+                   box-shadow: -2px 2px 2px rgba(0,0,0,.4);
                 //    transition: transform 2s ease;
                 //    transition: box-shadow 2.3s ease-in-out 2s;
                }
@@ -90,6 +91,7 @@
         background: gold;
         transition: all .5s ease;
         transition-delay: .3s;
+        overflow: hidden;
 
         &--container {
             display: flex;
@@ -113,7 +115,9 @@
 
     &__favorite:nth-child(3) {
     transform: translateX(0);
-    background: turquoise;
+    background: url('http://r.ddmcdn.com/s_f/o_1/APL/uploads/2014/10/kitten-cuteness300.jpg');
+    background-size: cover;
+    background-origin: 50% 50%;
     z-index: 3;
     }
 
@@ -128,4 +132,14 @@
     background: purple;
     z-index: 1;
     }
+}
+
+
+@keyframes topChallengers {
+    0% { transform: rotate(0); }
+    20% { transform:  rotate(-30deg) }
+    40% { transform: rotate(25deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(5deg); }
+    100% { transform: rotate(0) transform none; }
 }
